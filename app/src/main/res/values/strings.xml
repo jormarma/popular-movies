@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="movie_item_desc">Poster\'s thumbnail of the movie</string>
+    <string name="unavailable_data">Movie data is unavailable.\nPlease retry later.</string>
+    <string name="themoviedb_api_key"></string>
+    <string name="themoviedb_base_url">https://api.themoviedb.org/3/movie/%s</string>
+    <string name="refresh">Refresh</string>
+    <string name="themoviedb_images_url">http://image.tmdb.org/t/p/</string>
+    <string name="themoviedb_list_poster_width">w500</string>
+    <string name="loading_data">Loading data&#8230;</string>
+    <string name="date">Date</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="movie_info">Movie Info</string>
+    <string name="title">Title</string>
+    <string name="movie_poster">Movie Poster</string>
+
+    <!-- Properties for the Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="pref_order_key" translatable="false">orderBy</string>
+    <string name="pref_order_title">Order By&#8230;</string>
+    <string name="pref_order_entries_popular">Popular</string>
+    <string name="pref_order_entries_rating">Top Rated</string>
+    <string name="pref_order_popular" translatable="false">popular</string>
+    <string name="pref_order_rating" translatable="false">top_rated</string>
+
+</resources>

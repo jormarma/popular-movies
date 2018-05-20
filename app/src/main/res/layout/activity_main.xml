@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="2" />
+
+    <ImageView
+        android:id="@+id/iv_unavailable_data"
+        style="@style/UnavailableNetworkImage"
+        android:contentDescription="@string/unavailable_data" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_loading_data"
+        android:layout_gravity="center"
+        android:contentDescription="@string/loading_data" />
+
+    <TextView
+        android:id="@+id/tv_unavailable_data"
+        style="@style/UnavailableNetwork"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+</FrameLayout>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Needed by PreferenceFragmentCompat -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="UnavailableNetwork">
+        <item name="android:layout_width"> match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:shadowColor">@android:color/holo_red_light</item>
+        <item name="android:shadowDx">1.8</item>
+        <item name="android:shadowDy">1.8</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:text">@string/unavailable_data</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="UnavailableNetworkImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/forbidden</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:alpha">0.1</item>
+    </style>
+
+</resources>
