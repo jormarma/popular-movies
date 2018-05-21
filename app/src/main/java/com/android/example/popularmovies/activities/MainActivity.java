@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements ListItemClickList
 
         theMovieDbUtil = new TheMovieDbUtil(this);
 
+        SharedPreferences defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        defaultSharedPreferences.registerOnSharedPreferenceChangeListener(this);
+
         loadMovies();
     }
 
